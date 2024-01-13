@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-pack",
+  "version": "1.0.0",
+  "description": "restaurant bundle",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endaulster/restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/endaulster/restaurant/issues"
+  },
+  "homepage": "https://github.com/endaulster/restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

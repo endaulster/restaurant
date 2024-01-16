@@ -14,6 +14,11 @@ const createRestaurantHomepage = () => {
     title.textContent = "Il Quotidiano";
     pageContent.appendChild(title);
 
+    // Create welcoming text
+    const homewelcome = document.createElement("p");
+    homewelcome.textContent = "Fatto in casa — feel like home with the best cucina italiana in the city!";
+    pageContent.appendChild(homewelcome);
+
     // Load
     content.appendChild(pageContent);
 }

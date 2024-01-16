@@ -1,7 +1,9 @@
-import createRestaurantHomepage from "./homepage.js";
+import createRestaurantHomepage from "./homepage";
+import createPageChanger from "./tabs";
 
 function pageLoad()
 {
+    createPageChanger();
     createRestaurantHomepage();
 }
 

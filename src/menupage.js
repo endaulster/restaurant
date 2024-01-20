@@ -11,6 +11,16 @@ const createMenuPage = () => {
 
     // We add it
     content.appendChild(menuContent);
+
+    //We clean the background
+    Object.assign(content.style, {
+        backgroundColor: "black",
+        backgroundImage: "",
+        backgroundSize: "",
+        backgroundRepeat: "",
+        backgroundPosition: "",
+        backgroundAttachment: ""
+      });
 }
 
 export default createMenuPage;

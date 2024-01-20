@@ -11,33 +11,52 @@ const createPageChanger = () => {
 
     // We give them classes
     home.classList.add("tab");
+    home.setAttribute("id", "homeb")
+    
     menu.classList.add("tab");
+    menu.setAttribute("id", "menub")
+    
     contact.classList.add("tab");
+    contact.setAttribute("id", "contactb")
 
     //We set the text
-    home.textContent = "Home";
-    menu.textContent = "Menu";
-    contact.textContent = "Contact";
+    home.textContent = "HOME";
+    menu.textContent = "MENU";
+    contact.textContent = "CONTACT";
 
     //We add them
-    content.appendChild(home);
-    content.appendChild(menu);
-    content.appendChild(contact);
+    const menubar = document.createElement("div");
+    menubar.classList.add("navbar");
+
+    menubar.appendChild(home);
+    menubar.appendChild(menu);
+    menubar.appendChild(contact);
+
+    content.appendChild(menubar);
 
     //We make them clickable
     home.addEventListener("click", () => {
         createRestaurantHomepage();
         clearPage();
+        home.setAttribute("class", "used");
+        menu.setAttribute("class", "tab");
+        contact.setAttribute("class", "tab");
     })
     
     menu.addEventListener("click", () => {
         createMenuPage();
         clearPage();
+        home.setAttribute("class", "tab");
+        menu.setAttribute("class", "used");
+        contact.setAttribute("class", "tab");
     })
     
     contact.addEventListener("click", () => {
         createContactPage();
         clearPage();
+        home.setAttribute("class", "tab");
+        menu.setAttribute("class", "tab");
+        contact.setAttribute("class", "used");
     })
 }
 
@@ -48,5 +67,6 @@ function clearPage(){
         content.removeChild(pageContent);
     }
 }
+
 
 export default createPageChanger;

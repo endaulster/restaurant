@@ -6,8 +6,8 @@ const createRestaurantHomepage = () => {
     // Create image
     const image = document.createElement("img");
     image.src = "https://miro.medium.com/v2/resize:fit:1400/0*VqMkTYoYGOj5hQYU.jpg"
-    image.height = "300";
-    pageContent.appendChild(image);
+    // image.height = "300";
+    // pageContent.appendChild(image);
 
     // Create title
     const title = document.createElement("h1");
@@ -21,6 +21,15 @@ const createRestaurantHomepage = () => {
 
     // Load
     content.appendChild(pageContent);
+    
+    //We add a background image to main page
+    Object.assign(content.style, {
+        backgroundImage: "url(restaurant.jpg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        backgroundAttachment: "fixed"
+      });
 }
 
 export default createRestaurantHomepage;

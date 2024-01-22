@@ -10,8 +10,8 @@
 :root {
     --FONT: #FBF7FF;
     --FONT2: #FFFADE;
-    --BOX: #9182EC;
-    --BOX2: #3F386E;
+    --BOX: #591202;
+    --BOX2: #260101;
   }
 
 /* BASIC CONFIG FOR STYLING */
@@ -86,3 +86,16 @@
     height: auto;
 }
 
+/* HOMEPAGE */
+
+body > div > div.page-content > h1{
+    font-size: 5rem;
+    color: var(--FONT2);
+    text-shadow: 3px 3px 3px black;
+}
+
+body > div > div.page-content > p {
+    font-size: 1.33rem;
+    color: var(--FONT);
+    text-shadow: 3px 3px 3px black;
+}

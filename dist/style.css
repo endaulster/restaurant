@@ -12,6 +12,8 @@
     --FONT2: #FFFADE;
     --BOX: #591202;
     --BOX2: #260101;
+    --BACKGROUND: #D9AD77;
+    --BACKGROUND2: #BF8F65;
   }
 
 /* BASIC CONFIG FOR STYLING */
@@ -78,24 +80,59 @@
 
 .page-content {
     padding-top: 77px;
-    gap: 7px
-}
-
-.page-content img {
-    width: 500px;
-    height: auto;
+    gap: 20px;
 }
 
 /* HOMEPAGE */
 
-body > div > div.page-content > h1{
+#hometitle {
     font-size: 5rem;
     color: var(--FONT2);
     text-shadow: 3px 3px 3px black;
 }
 
-body > div > div.page-content > p {
+#homewelcome {
     font-size: 1.33rem;
     color: var(--FONT);
     text-shadow: 3px 3px 3px black;
 }
+
+/* CONTACT PAGE */
+
+.contactP {
+    color:#e2da9d;
+}
+
+.restAddress {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+#contactUS {
+    font-size: 1.33rem;
+    color: var(--FONT2);
+}
+
+#contactI, #contactUS > a {
+    color: var(--FONT2);
+}
+
+#contactI, .randomWrapper {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.randomWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 33px;
+}
+
+.contactPicture {
+    box-shadow: -6px 7px 5px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -6px 7px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 7px 5px -1px rgba(0,0,0,0.75);
+}
+

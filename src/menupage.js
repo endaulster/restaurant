@@ -14,7 +14,7 @@ const createMenuPage = () => {
 
     //We clean the background
     Object.assign(content.style, {
-        backgroundColor: "black",
+        backgroundColor: "rgb(130 115 97)",
         backgroundImage: "",
         backgroundSize: "",
         backgroundRepeat: "",

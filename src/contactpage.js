@@ -74,6 +74,13 @@ const createContactPage = () => {
     randomWrapper.appendChild(contactText); 
 
     content.appendChild(contactContent);    
+
+    //We delete grid
+    Object.assign(contactContent.style, {
+        display: '',
+        gridTemplateColumns: ''
+      });
+
     //We clean the background
     Object.assign(content.style, {
         backgroundColor: "rgb(25 23 22)",

@@ -14,6 +14,7 @@
     --BOX2: #260101;
     --BACKGROUND: #D9AD77;
     --BACKGROUND2: #BF8F65;
+    --BACKGROUND3: #fcfaf6;
   }
 
 /* BASIC CONFIG FOR STYLING */
@@ -134,5 +135,30 @@
     box-shadow: -6px 7px 5px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -6px 7px 5px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -6px 7px 5px -1px rgba(0,0,0,0.75);
+}
+
+/* RECIPES */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 23px;
+    width: 777px;
+    background-color: white;
+    border: 2px solid #e5e5e5;
+    box-shadow: -6px 7px 12px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: -6px 7px 12px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: -6px 7px 12px 0px rgba(0,0,0,0.33);
+}
+
+.recipeTitle {
+    color:black;
+}
+
+.recipeDes {
+    color: #6c6158;
 }
 

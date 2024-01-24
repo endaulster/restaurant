@@ -24,6 +24,12 @@ const createRestaurantHomepage = () => {
     // Load
     content.appendChild(pageContent);
     
+    //We delete grid
+    Object.assign(pageContent.style, {
+      display: '',
+      gridTemplateColumns: ''
+    });
+
     //We add a background image to main page
     Object.assign(content.style, {
         backgroundImage: "url(restaurant.jpg)",
